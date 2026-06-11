@@ -6,6 +6,7 @@ import os
 
 DB_PATH = os.path.join("data", "tracker.db")
 
+@st.cache_data(ttl=1)
 def load_data():
     """Connects to SQLite and loads all history into a Pandas DataFrame."""
     if not os.path.exists(DB_PATH):
