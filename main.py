@@ -13,7 +13,7 @@ def send_email_alert(product, current, target):
     sender_pass = os.environ.get("EMAIL_PASS")
     sender_email = os.environ.get("EMAIL_USER")
     receiver_email = os.environ.get("EMAIL_RECEIVER")
-    print(sender_email, sender_pass, receiver_email)
+
     if not sender_email or not sender_pass or not receiver_email:
         print("Email params not complete. Skipping alerts.")
         return
