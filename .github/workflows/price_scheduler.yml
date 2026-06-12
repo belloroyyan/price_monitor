@@ -2,7 +2,7 @@ name: Scheduled Competitor Price Scraper
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '33 8 * * *'
   workflow_dispatch:
 
 jobs:
